@@ -6,7 +6,7 @@ import random
 
 def constantTimer(min, max):
 	return math.floor(random.randint(min,max)) + min
-
+#change directory accordingly. Also make sure the right driver is being used
 browser = webdriver.PhantomJS('/Users/Naim/Desktop/finanicalprogramming/scrapetweets/phantomjs-2.1.1-macosx/bin/phantomjs')
 query = u'remicade'
 base_url = u'https://twitter.com/search?f=tweets&vertical=news&q='+ query +'&src=typd'
